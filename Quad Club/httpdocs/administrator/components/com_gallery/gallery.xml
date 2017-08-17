@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0" client="site" method="upgrade">
+	<name>Gallery</name>
+	<author>Davin Luginbühl, Kevin Manz</author>
+	<creationDate>07.08.2017</creationDate>
+	<copyright>Copyright © 2017 servergarden.ch. All Rights Reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<version>1.0.0</version>
+	<description>gallery component used for quad-club.ch.</description>
+	<files>
+		<filename component="com_gallery">gallery.php</filename>
+		<filename>controller.php</filename>
+		<filename>index.html</filename>
+		<folder>views/</folder>
+	</files>
+	<administration>
+            <menu link="index.php?option=com_gallery">Gallery</menu>
+	    <files>
+	    	<filename component="com_gallery">gallery.php</filename>
+	    </files>
+	</administration>
+</extension>

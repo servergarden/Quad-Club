@@ -1,0 +1,405 @@
+/*  overwritings  */
+
+.uk-section-default, body {
+	background: #222;
+}
+
+.uk-navbar-nav {
+	justify-content: space-around;
+	width: 100%;
+}
+
+.uk-navbar-nav li {
+	width: 360px;
+}
+
+.uk-navbar-container:not(.uk-navbar-transparent) {
+	background: #222;
+}
+
+#party_selector {
+position: fixed;
+top: 100px;
+}
+
+#party_selector button {
+	min-width: 360px;
+	padding: 0 16px;
+	height: 60%;
+	border-radius: 24px;
+	margin-top: 10%;
+	font-size: 16px;
+	color: #222;
+	font-family: 'Montserrat';
+	border: 0 none;
+	text-align: center;
+}
+
+#party_selector button:hover {
+	color: #fff;
+}
+
+.tm-header {
+	position: fixed;
+	z-index: 99;
+	width: 100%;
+}
+
+select:-moz-focusring {
+	color: transparent;
+	text-shadow: 0 0 0 #000;
+}
+
+.opt {
+	height: 24px;
+}
+
+
+/*  dropdown  */
+
+#party_selector .dropdown-menu {
+	padding: unset;
+	background: rgba(0, 0, 0, 0);
+	box-shadow: none;
+}
+
+.dropdown-menu li {
+	line-height: 40px;
+	vertical-align: middle;
+	margin: 4px 0;
+	border-radius: 24px;
+	text-align: center;
+	color: #000;
+	cursor: pointer;
+}
+
+.dropdown-menu li:hover {
+	/*
+filter: contrast(200%);
+	color: #000;
+*/
+	font-size: 16px;
+}
+
+
+/*  end overwritings  */
+
+.positioner {
+	/*
+	position: absolute;
+*/
+	border: 0 none;
+	margin: 0;
+	padding: 0;
+	width: 0;
+	height: 0;
+	background: #f00;
+	margin-top: calc(-35vh);
+	visibility: hidden;
+}
+
+#overlay {
+	/*
+	border: 2vw rgb(184, 144, 144) solid;
+	mix-blend-mode: color;
+*/
+	background: #222;
+	width: 30vw;
+	height: 140px;
+	position: fixed;
+	top: 80px;
+}
+
+#overlay div {
+	/*
+	border: 2vw rgb(184, 144, 144) solid;
+	mix-blend-mode: color;
+*/
+	width: 26vw;
+	height: 40px;
+}
+
+#overlay div:nth-child(1) {
+	background: #922;
+	border-bottom: 2vw rgb(71, 111, 71) solid;
+	border-left: 2vw rgb(71, 111, 71) solid;
+	border-right: 2vw rgb(71, 111, 71) solid;
+	border-bottom-left-radius: 4vw;
+	border-bottom-right-radius: 4vw;
+	margin-bottom: 40px;
+}
+
+#overlay div:nth-child(2) {
+	border-top: 2vw rgb(71, 111, 71) solid;
+	border-left: 2vw rgb(71, 111, 71) solid;
+	border-right: 2vw rgb(71, 111, 71) solid;
+	border-top-left-radius: 4vw;
+	border-top-right-radius: 4vw;
+}
+
+#botsi_content {
+	font-size: 32px;
+	display: none;
+	background: #222;
+}
+
+#botsi_content .fa-circle-o-notch {
+	margin: 30px 30vw 50px 30vw;
+}
+
+#botsi_content .fa-spin {
+	-webkit-animation: fa-spin 2.5s infinite linear;
+	animation: fa-spin 2.5s infinite linear;
+}
+
+.show_kacheln {
+	position: absolute;
+	left: 0;
+	width: 100%;
+}
+
+.display_big, .show_kacheln {
+	top: 80px;
+	display: flex !important;
+	align-content: space-around;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.show_kacheln img:hover {
+	border-color: #f606f6;
+}
+
+.show_kacheln img {
+	cursor: pointer;
+	width: 30vw;
+	height: 30vw;
+	margin: 20px auto;
+	object-fit: cover;
+}
+
+.display_big {
+	position: fixed;
+	overflow: hidden;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-o-user-select: none;
+}
+
+.display_big_ini {
+	display: none !important;
+}
+
+.show_kacheln img, .display_big {
+	border: #f00 2vw solid;
+	border-radius: 4vw;
+}
+
+.display_big img {
+	width: 80vw;
+	height: auto;
+}
+
+.img_high img {
+	width: auto;
+	height: calc(80vh - 80px);
+}
+
+@media screen and (orientation:portrait) {
+	.img_high img {
+		height: auto;
+	}
+}
+
+#clicker {
+	position: absolute;
+	width: 160px;
+	height: 160px;
+	margin: -160px 0 0 -80px;
+	border-radius: 80px;
+	mix-blend-mode: screen;
+	cursor: pointer;
+	font-size: 48px;
+	color: #fff;
+	line-height: 160px;
+	text-align: center;
+}
+
+#lp {
+	position: absolute;
+	width: 22vw;
+	height: 22vw;
+	margin-top: calc(80px + 4vw);
+	/*
+	background-image: url("images/galery_sys/single.png") !important;
+	background-size: 108% !important;
+*/
+	background-repeat: no-repeat !important;
+	cursor: pointer;
+	/*
+	text-align: center;
+	vertical-align: middle;
+*/
+	color: #fff;
+	border-radius: 22vw;
+	margin-left: 4vw;
+	background-position: 50% !important;
+}
+
+#lp img {
+	width: 100%;
+	height: 100%;
+}
+
+#warped {
+	position: relative;
+	display: block;
+	margin-left: 10.2vw;
+	margin-top: -21.4vw;
+	/*
+	margin-top: 0.6vw;
+*/
+	font-family: 'Courier New';
+	font-size: 2.4vw;
+	/*
+	font-weight: 600;
+*/
+	text-align: center;
+	transform: rotate(0deg);
+}
+
+#warped>span[class^=w]:nth-of-type(n+0) {
+	display: block;
+	position: absolute;
+	-moz-transform-origin: 50% 100%;
+	-webkit-transform-origin: 50% 100%;
+	transform-origin: 50% 100%;
+}
+
+#warped span {
+	font-size: inherit;
+	font-weight: regular;
+	font-style: normal;
+	height: 10.4vw;
+	white-space: pre;
+	overflow: visible;
+	padding: 0px;
+}
+
+#warped .w0 {
+	transform: rotate(0deg);
+}
+
+#warped .w1 {
+	transform: rotate(12deg);
+}
+
+#warped .w2 {
+	transform: rotate(24deg);
+}
+
+#warped .w3 {
+	transform: rotate(36deg);
+}
+
+#warped .w4 {
+	transform: rotate(48deg);
+}
+
+#warped .w5 {
+	transform: rotate(60deg);
+}
+
+#warped .w6 {
+	transform: rotate(72deg);
+}
+
+#warped .w7 {
+	transform: rotate(84deg);
+}
+
+#warped .w8 {
+	transform: rotate(96deg);
+}
+
+#warped .w9 {
+	transform: rotate(108deg);
+}
+
+#warped .w10 {
+	transform: rotate(120deg);
+}
+
+#warped .w11 {
+	transform: rotate(132deg);
+}
+
+#warped .w12 {
+	transform: rotate(144deg);
+}
+
+#warped .w13 {
+	transform: rotate(156deg);
+}
+
+#warped .w14 {
+	transform: rotate(168deg);
+}
+
+#warped .w15 {
+	transform: rotate(180deg);
+}
+
+#warped .w16 {
+	transform: rotate(192deg);
+}
+
+#warped .w17 {
+	transform: rotate(204deg);
+}
+
+#warped .w18 {
+	transform: rotate(216deg);
+}
+
+#warped .w19 {
+	transform: rotate(228deg);
+}
+
+#warped .w20 {
+	transform: rotate(240deg);
+}
+
+#warped .w21 {
+	transform: rotate(252deg);
+}
+
+#warped .w22 {
+	transform: rotate(264deg);
+}
+
+#warped .w23 {
+	transform: rotate(276deg);
+}
+
+#warped .w24 {
+	transform: rotate(288deg);
+}
+
+#warped .w25 {
+	transform: rotate(300deg);
+}
+
+#warped .w26 {
+	transform: rotate(312deg);
+}
+
+#warped .w27 {
+	transform: rotate(324deg);
+}
+
+#warped .w28 {
+	transform: rotate(336deg);
+}
